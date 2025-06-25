@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestBinBank</string>
+    <string name="search">Поиск</string>
+    <string name="enter_bin">Введите BIN</string>
+    <string name="name_bank">Название банка: %1$s</string>
+    <string name="country">Страна: %1$s</string>
+    <string name="latitude">Координаты: %1$s</string>
+    <string name="longitude">Координаты: %1$s</string>
+    <string name="emoji">Флаг: %1$s</string>
+    <string name="currency">Валюта: %1$s</string>
+    <string name="brand">Карта: %1$s</string>
+    <string name="error">Ошибка: %1$s</string>
+    <string name="min_6_lenght">Введите минимум 6 цифр</string>
+    <string name="unknown">Неизвестно</string>
+</resources>
