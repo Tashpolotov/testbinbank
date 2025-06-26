@@ -12,4 +12,5 @@
     <string name="error">Ошибка: %1$s</string>
     <string name="min_6_lenght">Введите минимум 6 цифр</string>
     <string name="unknown">Неизвестно</string>
+    <string name="look_save">Посмотреть сохраненные запросы</string>
 </resources>

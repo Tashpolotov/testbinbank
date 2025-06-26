@@ -67,7 +67,6 @@ abstract class RepositoryImplementation : KoinComponent {
 
     protected fun <T> Flow<Either<HttpResponseError, T>>.processException() =
         flowOn(Dispatchers.IO).catch { exception ->
-            Log.e("RepositoryImplementation", exception.stackTraceToString())
             emit(
                 Either.Left(
                     when (exception) {

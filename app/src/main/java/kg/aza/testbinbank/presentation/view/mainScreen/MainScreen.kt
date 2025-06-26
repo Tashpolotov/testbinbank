@@ -46,6 +46,7 @@ fun MainScreen(
         modifier = modifier
             .fillMaxWidth()
             .padding(horizontal = 16.dp)
+            .padding(bottom = 72.dp)
     ) {
         Spacer(Modifier.height(16.dp))
         BaseTextField(
@@ -99,6 +100,18 @@ fun MainScreen(
             else -> Unit
         }
     }
+    Box(modifier = Modifier.fillMaxSize()) {
+        BaseButton(
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .fillMaxWidth()
+                .padding(16.dp),
+            textButton = stringResource(R.string.look_save),
+            onClickButton = {
+                navController.navigate(Route.HistoryScreen.route)
+            }
+        )
+    }
 }
 
 @Composable
@@ -151,10 +164,5 @@ fun BankInfoDisplay(info: InfoUIModel, navController: NavController) {
             info.country?.emoji ?: stringResource(R.string.unknown)
         )
     )
-
-    BaseButton("Посмотреть сохраненные запросы",
-        onClickButton = {
-            navController.navigate(Route.HistoryScreen.route)
-        })
 }
 

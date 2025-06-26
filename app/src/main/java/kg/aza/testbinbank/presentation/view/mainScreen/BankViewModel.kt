@@ -1,6 +1,5 @@
 package kg.aza.testbinbank.presentation.view.mainScreen
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import arrow.core.Either
@@ -31,8 +30,5 @@ class BankViewModel(
                 }
             }
         }
-    }
-    init {
-        Log.d("Aza1", "BankViewModel created, fetchBankUseCase = $fetchBankUseCase")
     }
 }
